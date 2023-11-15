@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my tune wepsite</title>
+    <script src="https://kit.fontawesome.com/8b6262292a.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-family: 'Times New Roman', Times, serif, Courier, monospace;
+            font-weight: 250;
+            line-height: 1.2;
+            scroll-behavior: smooth;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            /* color:red; */
+            color: rgba(246, 246, 246, 0.897);
+        }
+
+        .contener {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: rgba(34, 34, 194, 0.862);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 8px 8px 9px rgb(240, 95, 95);
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+        }
+
+        .ul1,
+        .li1 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        .li1:hover {
+            border-bottom: 2px solid rgb(116, 5, 5);
+            font-weight: bold;
+            transition: calc(4.08);
+            text-transform: uppercase;
+            color: white;
+            transition: 0.3s ease-in;
+        }
+
+        .hero_section {
+            background-image: url(hero.png);
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero_section .contener {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .t1 {
+            font-size: 50px;
+            color: rgb(250, 223, 223);
+        }
+
+        .t2 {
+            font-size: 25px;
+            color: rgba(216, 220, 223, 0.878);
+        }
+
+        .t3 {
+            color: rgb(255, 255, 255);
+        }
+
+        .music_section {
+            background-color: rgba(23, 23, 131, 0.906);
+            padding: 25px;
+            scroll-margin: 40px;
+        }
+
+        .music_section .contenor {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ipad {
+            margin-top: -400px;
+            /* padding-top: -400px; */
+            position: relative;
+            top: 400px;
+        }
+
+        button {
+            padding: 10px 15px;
+            transition: 0.3s ease-in-out;
+            transition: 0.2s ease-in-out;
+            border: none;
+        }
+
+        button:hover {
+            transition: 0.2s ease-in-out;
+            opacity: 0.8;
+            text-transform: uppercase;
+            background-color: rgba(222, 9, 9, 0.913);
+            box-shadow: 5px 6px 5px rgba(11, 11, 11, 0.855);
+
+        }
+
+        .btn {
+            background-color: rgba(248, 71, 71, 0.822);
+            color: white;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .t4 {
+            color: white;
+            text-transform: initial;
+        }
+
+        .t5 {
+            color: white;
+            text-transform: lowercase;
+        }
+
+        .t6 {
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .about-music {
+            padding-top: 500px;
+            /* margin-top: 400px; */
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .t7 {
+            color: rgba(26, 24, 24, 0.946);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .t8 {
+            color: rgba(12, 1, 1, 0.819);
+            text-transform: lowercase;
+            font-weight: lighter;
+        }
+
+        .btn2 {
+            background-color: rgba(42, 42, 189, 0.831);
+            color: white;
+
+        }
+
+        .vid1 {
+            background-image: url(video.png);
+            min-height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .vid1 .contener {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: -100px;
+
+        }
+
+        .t9 {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: rgb(253, 253, 255);
+        }
+
+        .hero_section .vid1 {
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+
+        }
+
+        .gift {
+            margin-top: 30px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .gift2 {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .t11 {
+            display: flex;
+            color: black;
+            align-items: flex-start;
+        }
+
+        .t12 {
+            color: rgba(0, 0, 0, 0.858);
+        }
+
+        .t13 {
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+
+        .btn3 {
+            display: flex;
+            align-items: flex-start;
+            background-color: rgba(23, 23, 210, 0.937);
+            color: white;
+        }
+
+        .footer_upper {
+            background-color: rgba(81, 7, 81, 0.863);
+            color: white;
+            padding: 25px;
+        }
+
+        .footer_upper .contener {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .footer_upper h4 {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        .footer_lower p {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(7, 7, 142, 0.862);
+            color: white;
+            padding: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="contener">
+            <div class="logo">
+                my tunes
+            </div>
+            <ul class="ul1">
+                <a href="#hero">
+                    <li class="li1">overview</li>
+                </a>
+                <a href="#music">
+                    <li class="li1">music</li>
+                </a>
+                <a href="#video">
+                    <li class="li1">video</li>
+                </a>
+                <a href="#gift">
+                    <li class="li1">giftcard</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero_section" id="hero">
+            <div class="contener">
+                <h1 class="t1">My Tunes</h1>
+                <h3 class="t2">Listen to latest Music for FREE and download MP3 songs online in HD quality.</h3>
+                <p class="t3">Fill your world with the songs, albums, and artists that define you. Get unlimited access
+                    to millions of tracks, curated playlists and original content from the artists you know and love.
+                    Experience Lossless Audio, and hear sound all around you with Spatial Audio featuring Dolby Atmos.
+                </p>
+            </div>
+        </section>
+        <section class="music_section" id="music">
+            <div class="contenor">
+                <h2>
+                    <span><i class="fa fa-music"></i></span>
+                    music
+                </h2>
+                <h4 class="t4">This app is available only on the App Store for iPhone, iPad, and Apple Watch.</h4>
+                <p class="t5">Play Wynk Top 100 songs online on Wynk. The list consists of 100 songs sung by artists
+                    like Jubin Nautiyal, Pritam Chakraborty, Anirudh Ravichander, Vishal Chandrashekhar, Jonita Gandhi,
+                    Shreya Ghoshal, among others. Play your favourite songs online, or download MP3s on Wynk.</p>
+                <button class="btn">start your trial now</button>
+                <p class="t6">Dont forget to install Wynk Music on your mobile phones</p>
+                <div class="ipad">
+                    <img src="ipad-iphone.png" alt="image">
+                </div>
+            </div>
+        </section>
+        <section class="about-music contener">
+            <h2 class="t7">The music you wouldn't want to miss</h2>
+            <h4 class="t8">MP3 songs download: 10 best free legal MP3 music download sites on mobile phone and laptop/
+                PC You no longer have to rely on Spotify, Google Play Music or other music streaming services that
+                merely grant you the license to listen to your favourite songs. There are several free MP3 music
+                download sites that allow you to download MP3 songs for free on a laptop/ PC and mobile phone. You can
+                access these free MP3 music download sites from anywhere in the world to get hold of free music and
+                download it on your laptop or smartphone. Besides, there is no issue of digital piracy involved in using
+                these free MP3 song download sites, meaning you can build up your music collection legally. Amongst the
+                numerous options available, we have compiled a list of the 5 best free MP3 music download sites that
+                allows you to enjoy the company of your favourite music legally.</h4>
+            <button class="btn2">Read more</button>
+            <div class="macimg">
+                <img src="mac.png" alt="image">
+            </div>
+        </section>
+        <section class="vid1" id="video">
+            <div class="contener">
+                <h3 class="t9">Best free legal MP3 download sites</h3>
+                <p class="t10">Last but not least on our list of the best free MP3 song download sites is ReverbNation
+                    which has an amazing collection of tracks by new bands, primarily. You can download the songs of
+                    these upcoming artists to boast of a unique music collection of artists who will be tomorrow’s
+                    legends.</p>
+            </div>
+        </section>
+        <section class="gift contener" id="gift">
+            <div class="gift1">
+                <img src="gift_card.png" alt="image">
+            </div>
+            <div class="gift2">
+                <h2 class="t11">Gift card</h2>
+                <p class="t12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni placeat vitae saepe.
+                    Quasi cupiditate quis nulla amet laborum iure in iste ex ducimus modi repellat suscipit itaque
+                    animi, libero voluptate non minus blanditiis voluptatem necessitatibus ipsum perferendis sequi
+                    voluptas! Qui inventore sunt eaque nihil cupiditate blanditiis, tempora nobis obcaecati excepturi!
+                </p>
+                <p class="t13">already have on orange mytune music gift card</p>
+                <hr>
+                <div>
+                    <button class="btn3">
+                        Redeem
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer_upper">
+            <div class="contener">
+                <div class="footer_link">
+                    <h4>shop & learn</h4>
+                    <ul>
+                        <li>music</li>
+                        <li>movies</li>
+                        <li>shows</li>
+                        <li>apps</li>
+                        <li>gift card</li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <h4>education & business</h4>
+                    <ul>
+                        <li>orange & education</li>
+                        <li>shop for collage</li>
+                        <li>orange & business</li>
+                        <li>shop for business</li>
+                        <li>job</li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <h4>about & orange</h4>
+                    <ul>
+                        <li>newroom</li>
+                        <li>orange leadership</li>
+                        <li>investor</li>
+                        <li>events</li>
+                        <li>contack orange</li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <h4>orange store</h4>
+                    <ul>
+                        <li>find a store</li>
+                        <li>today at orange</li>
+                        <li>finacing</li>
+                        <li>orange camp</li>
+                        <li>oder status</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer_lower">
+            <p>copy right &copy; 2022 do some coding</p>
+        </section>
+    </footer>
+</body>
+
+</html>

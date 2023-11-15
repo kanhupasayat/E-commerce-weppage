@@ -1,0 +1,243 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+        }
+
+        header {
+            border: 1px solid #ccc;
+            box-shadow:2px 4px 4px black;
+            height: 110vh;
+            position:sticky;
+            top:0;
+            z-index: 100;
+        }
+
+        nav .h1 {
+            font-size: 26px;
+            border-bottom: 1px solid #ccc;
+            background-color: azure;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav .ui1 li {
+            padding: 9px;
+            color: black;
+            border-bottom: 1px solid #ccc;
+            background-color: whitesmoke;
+        }
+
+        nav .ui1 li:hover {
+            color: rgb(255, 255, 255);
+            text-transform: capitalize;
+            background-color: rgb(10, 10, 10);
+            transition: 0.4s ease-in-out;
+
+        }
+
+        main {
+            padding: 50px;
+            max-width: 900px;
+            background-color:aliceblue;
+        }
+        
+        article p{
+            padding: 20px;
+        }
+        article ul{
+            padding: 20px;
+            margin: 15px;
+            
+        }
+        .div1{
+            background-color:bisque;
+            border-radius: 10px;
+    
+        }
+        .div1 h2{
+            margin: 10px;
+        }
+        .div2 p{
+            background-color:rgba(68, 62, 62, 0.986);
+            color:white;
+            border-radius: 10px;
+            margin: 40px;
+            padding:8px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            background-color:black;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing:2px ;
+            border-radius: 8px;
+            box-shadow: 2px 5px  5px white;
+            border-bottom: 2px solid black;
+        }
+        button:hover{
+            text-transform: uppercase;
+            background-color:rgba(43, 215, 238, 0.863);
+            color:rgb(255, 255, 255);
+            font-size: 10px;
+            font-weight: 500;
+            box-shadow: 4px 5px 5px black;
+            transition: 0.4s ease-in-out;
+        }
+        
+        section{
+            margin: 50px;
+        }
+        .div3{
+            background-color:bisque;
+            border-radius: 10px;
+
+        }
+        .div3 h2{
+            padding: 13px;
+        }
+        .div4 ul li{
+            list-style: none;
+            letter-spacing: 3px;
+        }
+        .div4{
+            margin: 22px;
+            background-color: rgba(68, 62, 62, 0.986);
+            color: white;
+            border-radius: 10px;
+        }
+        .div3 p{
+            border-bottom:1px solid #ccc ;
+        }
+        .div5{
+            background-color:bisque;
+            border-radius: 10px;
+        }
+        .div5 h2{
+            padding: 13px;
+        }
+        .div6 ul li{
+            list-style: none;
+            letter-spacing: 3px;
+        }
+        .div6{
+            margin: 22px;
+            background-color: rgba(68, 62, 62, 0.986);
+            color: white;
+            border-radius: 10px;
+        }
+        .d1{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+        .d2{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+
+
+        
+        .d2 li{
+            list-style: none;
+            background-color:rgb(238, 192, 132);
+            padding: 4px;
+            border-radius: 4px;
+
+        }
+        .d1 li{
+    
+            list-style: none;
+            background-color:rgb(238, 192, 132) ;
+            padding: 4px;
+            border-radius: 4px;
+            
+        }
+        .d3{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+
+        }
+        .d3 li{
+            list-style: none;
+            background-color:rgb(238, 192, 132) ;
+            padding: 4px;
+            border-radius: 4px;
+            
+        }
+        .d4{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+        .d4 li{
+            list-style: none;
+            background-color:rgb(238, 192, 132) ;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .d5{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+        .d5 li{
+            list-style: none;
+            background-color:rgb(238, 192, 132) ;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .d6{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+        .d6 li{
+            list-style: none;
+            background-color:rgb(238, 192, 132) ;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .d7{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between; 
+            border-bottom: 1px solid black;
+        }
+        .d7 li{
+            list-style: none;
+            background-color:rgb(238, 192, 132) ;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .d8{
+            display: flex;
+            margin: 13px;
+            justify-content: space-between; 
+            border-bottom: 1px solid black;
+        }
+        .d8 li{
+            list-style: none;
+            background-color:rgb(238, 192, 132) ;
+            padding: 4px;
+            border-radius: 4px;
+        }
